@@ -1,0 +1,20 @@
+
+
+function palindrome(string){
+
+//compare the first letter of string with last letter
+//compare second letter with second to last letter
+//get the length of the string
+//compare the letter using loop
+//exit if the return false
+
+var strLength = string.length
+for (let index =0; index <strLength ; index++){
+  if(string[index] !== string[strLength-1-index]){
+    return false;
+  }
+} 
+return true;
+}
+console.log(palindrome('eye'));
+
